@@ -11,6 +11,13 @@ nav {
     background-color:rgb(50, 50, 50)
 }
 
+/* Header styling */
+header img {
+    display: block;
+    margin: 30px;
+    width: 200px;
+}
+
 /* Link styling */
 a {
     color: rgb(255, 255, 255);
@@ -21,16 +28,13 @@ a {
 a:link {
     text-decoration: none;
 }
-
 a:visited {
     text-decoration: none;
 }
-
 a:hover {
     color: blue;
     text-decoration: underline;
 }
-
 a:active {
     text-decoration: underline;
 }
