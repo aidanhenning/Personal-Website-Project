@@ -1,3 +1,8 @@
+/* Body background */
+body{
+    background-color: floralwhite;
+}
+
 /* Navigation bar styling */
 nav {
     display: block;
