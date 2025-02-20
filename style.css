@@ -18,14 +18,8 @@ nav a {
 nav a:link {
     text-decoration: none;
 }
-nav a:visited {
-    text-decoration: none;
-}
 nav a:hover {
     color: rgb(132, 0, 184);
-    text-decoration: underline;
-}
-nav a:active {
     text-decoration: underline;
 }
 
@@ -97,4 +91,14 @@ main h1 {
 }
 td a {
     color: white;
+    text-decoration: none;
+    padding: 3px;
+    border-style:groove;
+}
+
+td a:link {
+    text-decoration: none;
+}
+td a:hover {
+    color: rgb(132, 0, 184);
 }
