@@ -38,10 +38,26 @@ header img {
 }
 
 /* input any table formatting for portfolio page */
+tr {
+    text-align: center;
+}
 
 /* Portfolio image formatting */
 td img {
-    display: block;
-    margin: 20px;
-    width: 500px;
+    display: inline-block;
+    width: 300px;
+}
+
+/* Portfolio title styling */
+.zoo {
+    text-align: left;
+    margin-left: 100px;
+}
+.grocery {
+    text-align: right;
+    margin-right: 100px;
+}
+.vault {
+    text-align: left;
+    margin-left: 100px;
 }
