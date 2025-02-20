@@ -1,54 +1,83 @@
-/* Body background */
+/* Body background of whole site */
 body{
-    background-color: floralwhite;
+    background-color: rgb(15, 15, 15);
 }
 
 /* Navigation bar styling */
 nav {
-    display: block;
     padding: 10px;
     margin: 0px;
     background-color:rgb(50, 50, 50)
 }
-a {
+nav a {
     color: rgb(255, 255, 255);
     padding: 5px;
 }
 
 /* Navigation bar link states */
-a:link {
+nav a:link {
     text-decoration: none;
 }
-a:visited {
+nav a:visited {
     text-decoration: none;
 }
-a:hover {
+nav a:hover {
     color: blue;
     text-decoration: underline;
 }
-a:active {
+nav a:active {
     text-decoration: underline;
 }
 
-/* Home header styling */
+/* All pages text coloring */
+h1 {
+    color: white;
+    font-size: 450%;
+    font-family: sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+h2 {
+    color: rgb(132, 0, 184);
+}
+h3 {
+    color: white;
+}
+p {
+    color: white;
+}
+td {
+    color: white;
+}
+
+/* Home styling */
 header img {
-    display: block;
+    display: flex;
     margin: 30px;
     width: 200px;
 }
+.profile {
+    text-align: center;
+    margin-top: 30px;
+}
+.instagram {
+    width: 70px;
+}
+.linkedin {
+    width: 80px;
+}
+main a img:hover {
+    transform: scale(1.25);
+}
 
-/* input any table formatting for portfolio page */
+/* Portfolio formatting */
 tr {
     text-align: center;
 }
-
-/* Portfolio image formatting */
 td img {
     display: inline-block;
     width: 300px;
 }
-
-/* Portfolio title styling */
 .zoo {
     text-align: left;
     margin-left: 100px;
