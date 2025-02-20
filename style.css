@@ -75,22 +75,20 @@ main a img:hover {
 }
 
 /* Portfolio formatting */
-tr {
+main h1 {
     text-align: center;
+    margin-top: 50px;
 }
-td img {
-    display: inline-block;
-    width: 300px;
+.projects {
+    text-align: center;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
 }
-.zoo {
-    text-align: left;
-    margin-left: 100px;
+.portfolio-images {
+    width: 400px;
+    margin: 10px;
 }
-.grocery {
-    text-align: right;
-    margin-right: 100px;
-}
-.vault {
-    text-align: left;
-    margin-left: 100px;
+td a {
+    color: white;
 }
