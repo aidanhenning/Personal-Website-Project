@@ -10,21 +10,12 @@ nav {
     margin: 0px;
     background-color:rgb(50, 50, 50)
 }
-
-/* Header styling */
-header img {
-    display: block;
-    margin: 30px;
-    width: 200px;
-}
-
-/* Link styling */
 a {
     color: rgb(255, 255, 255);
     padding: 5px;
 }
 
-/* Link states */
+/* Navigation bar link states */
 a:link {
     text-decoration: none;
 }
@@ -37,4 +28,20 @@ a:hover {
 }
 a:active {
     text-decoration: underline;
+}
+
+/* Home header styling */
+header img {
+    display: block;
+    margin: 30px;
+    width: 200px;
+}
+
+/* input any table formatting for portfolio page */
+
+/* Portfolio image formatting */
+td img {
+    display: block;
+    margin: 20px;
+    width: 500px;
 }
