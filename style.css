@@ -74,7 +74,13 @@ main a img:hover {
     transform: scale(1.25);
 }
 
-/* Portfolio formatting */
+/* About styling */
+.about {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Portfolio styling */
 main h1 {
     text-align: center;
     margin-top: 50px;
