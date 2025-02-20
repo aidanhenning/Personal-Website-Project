@@ -39,15 +39,19 @@ h1 {
 }
 h2 {
     color: rgb(132, 0, 184);
+    font-family: sans-serif;
 }
 h3 {
     color: white;
+    font-family: sans-serif;
 }
 p {
     color: white;
+    font-family: sans-serif;
 }
 td {
     color: white;
+    font-family: sans-serif;
 }
 
 /* Home styling */
