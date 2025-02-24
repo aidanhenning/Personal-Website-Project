@@ -313,4 +313,29 @@ ul {
     width: 400px;
 }
 
+/* ---- CONTACT SECTION ---- */
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-heading {
+    margin-bottom: 20px;
+}
+.contact-form-container {
+    background-color: #9775fa;
+    width: 600px;
+    padding: 50px 100px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.contact-form-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 70%;
+}
+
 /* -------------------------- SINGLE USE -------------------------- */
