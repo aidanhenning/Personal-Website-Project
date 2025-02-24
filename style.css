@@ -61,7 +61,7 @@ Black: #000000 (black)
 
 /* used to set default text properties accross application */
 body {
-    font-family: sans-serif;
+    font-family: sans-serif !important;
 }
 /* used to set outer limits of all the content */
 .container {
