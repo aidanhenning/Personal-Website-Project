@@ -7,31 +7,47 @@
     <title>Portfolio</title>
 </head>
 <body>
-    <!-- Navigation bar -->
-    <header>
-        <nav>
-          <a href="home.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="portfolio.html">Portfolio</a>
-          <a href="contact.html">Contact</a>
-      </nav>
-      </header> 
 
-      <!-- Three project examples -->
-      <main>
-        <h1>Projects</h1>
-        <table class="projects">
-            <tr>
-                <td><a href="https://github.com/aidanhenning/The-Zoo-Project" target="_blank">Zoo Project</a></td>
-                <td><a href="https://github.com/aidanhenning/Grocery-List" target="_blank">Grocery List</a></td>
-                <td><a href="https://github.com/aidanhenning/Secure-The-Vault" target="_blank">Vault Code</a></td>
-            </tr>
-            <tr>
-                <td><img class="portfolio-images" src="/Images/black bear.JPG" alt="Zoo Project Snip"></td>
-                <td><img class="portfolio-images" src="/Images/grocery.PNG" alt="Grocery List Snip"></td>
-                <td><img class="portfolio-images" src="/Images/vault.JPG" alt="Vault Snip"></td>
-            </tr>
-        </table>
-      </main>
+    <div class="container">
+        <header>
+    
+          <!-- NAVIGATION -->
+          <nav class="nav-bar">
+            <a class="btn nav-item" href="home.html">Home</a>
+            <a class="btn nav-item" href="about.html">About</a>
+            <a class="btn nav-item" href="portfolio.html">Portfolio</a>
+            <a class="btn nav-item" href="contact.html">Contact</a>
+          </nav>
+    
+          <!-- PORTFOLIO TITLE SECTION -->
+          <section class="portfolio-title-section">
+            <h1 class="portfolio-heading">Portfolio</h1>
+            <h2 class="portfolio-subheading">A Brief Introduction</h2>
+            <p class="portfolio-paragraph">Below are the first three major projects I worked on at my time with Fullstack Academy.</p>
+          </section>
+        </header>
+
+        <!-- PORTFOLIO DISPLAY SECTION -->
+        <main>
+            <table class="portfolio-table">
+                <tr>
+                    <td class="portfolio-table-item"><a href="https://github.com/aidanhenning/The-Zoo-Project" target="_blank">Zoo Project</a></td>
+                    <td class="portfolio-table-item"><a href="https://github.com/aidanhenning/Grocery-List" target="_blank">Grocery List</a></td>
+                    <td class="portfolio-table-item"><a href="https://github.com/aidanhenning/Secure-The-Vault" target="_blank">Vault Code</a></td>
+                </tr>
+                <tr>
+                    <td class="portfolio-table-item"><img class="portfolio-images" src="/block08/Personal-Website-Project/Images/black bear.JPG" alt="Zoo Project Snip"></td>
+                    <td class="portfolio-table-item"><img class="portfolio-images" src="/block08/Personal-Website-Project/Images/grocery.PNG" alt="Grocery List Snip"></td>
+                    <td class="portfolio-table-item"><img class="portfolio-images" src="/block08/Personal-Website-Project/Images/vault.JPG" alt="Vault Snip"></td>
+                </tr>
+            </table>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+          <p class="small-text">Made with &hearts; in Santa Monica</p>
+        </footer>
+      </div>
+
 </body>
 </html>
