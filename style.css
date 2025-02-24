@@ -231,4 +231,59 @@ ul {
     text-align: center;
 }
 
+/* ---- ABOUT TITLE SECTION ---- */
+
+.about-title-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.about-heading {
+    margin-bottom: 10px;
+}
+.about-subheading {
+    margin-bottom: 10px;
+}
+
+/* ---- EDUCATION SECTION ---- */
+
+.education-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.education-heading {
+    margin-bottom: 10px;
+}
+.education-cards {
+    width: 800px;
+    height: 300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.bootcamp-card {
+    background-color: #339af0;
+    width: 300px;
+    padding: 20px;
+    border-radius: 20px;
+}
+.college-card {
+    background-color: #339af0;
+    width: 300px;
+    padding: 20px;
+    border-radius: 20px;
+}
+.education-card-heading{
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+.education-card-paragraph {
+    color: #ffffff;
+}
+
+/* ---- EXPERIENCE SECTION ---- */
+.experience-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
 /* -------------------------- SINGLE USE -------------------------- */
