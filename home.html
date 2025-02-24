@@ -7,24 +7,57 @@
     <title>Homepage</title>
 </head>
 <body>
-    <!-- Navigation bar -->
-    <header>
-      <nav>
-        <a href="home.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-    </header>
 
-    <!-- Main body of homepage -->
-    <main class="profile">
-      <img src="/Images/Profile.PNG" alt="Profile Picture">
-      <h1>Hi, I am Aidan Henning</h1>
-      <h2>Full Stack Developer</h2>
-      <h3>Full Stack Developer with expertise in web development. <br> Other interests in game development, esports, and AI.</h3>
-      <a href="https://www.instagram.com/aidanhenning/" target="_blank"><img class="instagram" src="/Images/instagram logo.png" alt="Instagram Logo"></a>
-      <a href="https://www.linkedin.com/in/aidanhenning/" target="_blank"><img class="linkedin" src="/Images/linkedin.png" alt="LinkedIn Logo"></a>
-    </main>
+  <div class="container">
+    <header>
+      <!-- NAVIGATION -->
+      <nav class="nav-bar">
+        <a class="btn nav-item" href="home.html">Home</a>
+        <a class="btn nav-item" href="about.html">About</a>
+        <a class="btn nav-item" href="portfolio.html">Portfolio</a>
+        <a class="btn nav-item" href="contact.html">Contact</a>
+      </nav>
+  
+      <!-- BIO SECTION -->
+      <section class="bio-section">
+        <h1 class="bio-heading">Hi, I'm Aidan Henning</h1>
+        <h2 class="bio-heading">Full-Stack Developer</h2>
+        <p class="bio-paragraph">Full-Stack Developer with expertise in <span class="pop-text">web development.</span> <br>
+        Other interests in game development, esports, and AI</p>
+        <a href="https://www.instagram.com/aidanhenning/"><img class="social-media-logo" src="/block08/Personal-Website-Project/Images/instagram-logo.png" alt="instagram logo"></a>
+        <a href="https://www.linkedin.com/in/aidanhenning/"><img class="social-media-logo"  src="/block08/Personal-Website-Project/Images/linkedin.png" alt="linkedin logo"></a>
+      </section>
+  
+      <!-- LEARN MORE CARD SECTION -->
+       <section class="learn-more-section">
+        <div class="learn-more-card">
+          <h2 class="learn-more-heading">Learn more about me</h2>
+          <a class="btn btn-secondary" href="about.html">Learn more</a>
+        </div>
+       </section>
+  
+      <!-- SKILLS SECTION -->
+       <section class="skills-section">
+        <div class="skills-card">
+          <h2 class="skills-heading">Skills</h2>
+          <ul class="program-logos">
+            <li><img class="skills-logo" src="/block08/Personal-Website-Project/Images/HTML5_logo.png" alt="html logo"></li>
+            <li><img class="skills-logo" src="/block08/Personal-Website-Project/Images/CSS3_logo.png" alt="css logo"></li>
+            <li><img class="skills-logo" src="/block08/Personal-Website-Project/Images/JavaScript-logo.png" alt="javascript logo"></li>
+            <li><img class="skills-logo" src="/block08/Personal-Website-Project/Images/React-logo.png" alt="react logo"></li>
+            <li><img class="skills-logo" src="/block08/Personal-Website-Project/Images/Sql_logo.png" alt="sql logo"></li>
+            <li><img class="skills-logo" src="/block08/Personal-Website-Project/Images/node-logo.png" alt="node logo"></li>
+            <li><img class="skills-logo" src="/block08/Personal-Website-Project/Images/Python-logo.png" alt="python logo"></li>
+          </ul>
+        </div>
+       </section>
+  
+      <!-- FOOTER -->
+       <footer class="footer">
+        <p class="small-text">Made with &hearts; in Santa Monica</p>
+       </footer>
+    </header>
+  </div>
+
 </body>
 </html>

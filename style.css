@@ -1,131 +1,234 @@
-/* Body background of whole site */
-body{
-    background-color: rgb(15, 15, 15);
+/* 
+
+-------- TYPOGRAPHY --------
+
+FONT SIZES
+12px / 16px / 20px / 24px / 32px / 40px / 48px / 62px
+
+FONT WEIGHTS
+400 / 700
+
+LINE HEIGHTS
+1.2 / 1.5
+
+LETTER SPACING
+0 / -2px
+
+FONT FAMILY
+Ariel - Sans Serif
+
+-------- COLORS --------
+
+FROM OPEN-COLOR ON GOOGLE
+
+PRIMARY
+Base: #339af0 (blue)
+Tint: #d0ebff
+Shade: #1971c2
+
+SECONDARY
+Base: #9775fa (lavender)
+Tint: #e5dbff
+Shade: #7048e8
+
+GREY
+Base: #495057
+Tint: #f1f3f5
+Shade: #212529
+White: #ffffff (white)
+Black: #000000 (black)
+
+-------- BORDER RADIUS --------
+
+8px / 20px
+
+-------- SPACING SYSTEM --------
+
+5px / 10px / 15px / 20px / 25px / 30px / 40px / 50px / 60px / 70px / 80px / 90px / 100px / 125px / 150px / 200px / 250px / 300px / 400px / 500px
+
+*/
+
+/* -------------------------- GLOBAL STYLES -------------------------- */
+
+/* for all type selectors */
+
+/* used to reset defualt styles such as box model properties*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-/* Navigation bar styling */
-nav {
-    padding: 10px;
-    margin: 0px;
-    background-color:rgb(50, 50, 50)
-}
-nav a {
-    color: rgb(255, 255, 255);
-    padding: 5px;
-}
-
-/* Navigation bar link states */
-nav a:link {
-    text-decoration: none;
-}
-nav a:hover {
-    color: rgb(132, 0, 184);
-    text-decoration: underline;
-}
-
-/* All pages text coloring */
-h1 {
-    color: white;
-    font-size: 450%;
+/* used to set default text properties accross application */
+body {
     font-family: sans-serif;
-    padding: 0px;
-    margin: 0px;
+}
+/* used to set outer limits of all the content */
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+h1 {
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -2px;
+    font-size: 62px;
+    color: #212529;
 }
 h2 {
-    color: rgb(132, 0, 184);
-    font-family: sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -2px;
+    font-size: 40px;
+    color: #212529;
 }
 h3 {
-    color: white;
-    font-family: sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -2px;
+    font-size: 40px;
+    color: #212529;
 }
 p {
-    color: white;
-    font-family: sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0px;
+    font-size: 16px;
+    color: #495057;
 }
-td {
-    color: white;
-    font-family: sans-serif;
+a {
+    font-weight: 400;
+    text-decoration: none;
+    line-height: 1.5;
+    font-size: 16px;
+    color: #495057;
+    display: inline-block;
+}
+span {
+    display: inline-block;
+}
+ul {
+    list-style: none;
 }
 
-/* Home styling */
-header img {
+/* -------------------------- COMPONENTS -------------------------- */
+
+/* used for reusable code such as classes */
+
+.pop-text {
+    font-weight: 700;
+    color: #9775fa;
+}
+.small-text {
+    font-size: 12px;
+}
+
+/* note: I did not use any outline buttons in this project, so I did not add any border to the psuedo-classes below. */
+.btn {
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+}
+.btn-primary:link, .btn-primary:visited {
+    color: #ffffff;
+    background-color:#339af0;
+}
+.btn-primary:hover, .btn-primary:active {
+    color: #ffffff;
+    background-color:#1971c2;
+}
+.btn-secondary:link, .btn-secondary:visited {
+    color: #ffffff;
+    background-color: #9775fa;
+}
+.btn-secondary:hover, .btn-secondary:active {
+    color: #ffffff;
+    background-color: #7048e8;
+}
+.social-media-logo {
+    width: 60px;
+}
+
+/* -------------------------- SECTIONS -------------------------- */
+
+/* used for different sections of the page*/
+
+/* ---- NAVIGATION SECTION ---- */
+
+.nav-bar {
+    margin-bottom: 100px;
     display: flex;
-    margin: 30px;
-    width: 200px;
+    flex-direction: row;
+    justify-content: center;
 }
-.profile {
+.nav-item:link, .nav-item:visited {
+    background-color: none;
+}
+.nav-item:hover {
+    background-color: #f1f3f5;
+}
+.nav-item:active {
+    background-color: #495057;
+}
+/* ---- BIO SECTION ---- */
+
+.bio-section {
     text-align: center;
-    margin-top: 30px;
+    margin-bottom: 40px;
 }
-.instagram {
-    width: 70px;
+.bio-heading {
+    margin-bottom: 10px;
 }
-.linkedin {
-    width: 80px;
+.bio-paragraph {
+    margin-bottom: 5px;
 }
-main a img:hover {
-    transform: scale(1.25);
-}
+/* ---- LEARN MORE SECTION ---- */
 
-/* About styling */
-.about {
+.learn-more-section {
     text-align: center;
-    margin-top: 50px;
+    margin-bottom: 50px;
 }
+.learn-more-card {
+    background-color: #339af0;
+    width: 800px;
+    padding: 50px 100px;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+.learn-more-heading {
+    margin-bottom: 20px;
+}
+/* ---- SKILLS SECTION ---- */
 
-/* Portfolio styling */
-main h1 {
+.skills-section {
     text-align: center;
-    margin-top: 50px;
+    margin-bottom: 50px;
 }
-.projects {
+.skills-card {
+    background-color: #f1f3f5;
+    width: 800px;
+    padding: 25px 50px;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+.program-logos {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+.skills-heading {
+    margin-bottom: 10px;
+}
+.skills-logo {
+    width: 50px;
+}
+/* ---- FOOTER SECTION ---- */
+
+.footer {
     text-align: center;
-    margin-top: 100px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.portfolio-images {
-    width: 400px;
-    margin: 10px;
-}
-td a {
-    color: white;
-    text-decoration: none;
-    padding: 3px;
-    border-style:groove;
 }
 
-td a:link {
-    text-decoration: none;
-}
-td a:hover {
-    color: rgb(132, 0, 184);
-}
-
-/* Form styling */
-form {
-    color: white;
-    margin-top: 50px;
-}
-
-input[type=text]{
-    margin: 10px 0px;
-    width: 100%;
-}
-
-input[type=email]{
-    margin: 10px 0px;
-    width: 100%;
-}
-
-input[type=submit]{
-    background-color: white;
-}
-
-/* message text area */
-textarea {
-    width: 100%;
-    height: 100px;
-
-}
+/* -------------------------- SINGLE USE -------------------------- */
