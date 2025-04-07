@@ -50,20 +50,14 @@ Black: #000000 (black)
 
 /* -------------------------- GLOBAL STYLES -------------------------- */
 
-/* for all type selectors */
-
-/* used to reset defualt styles such as box model properties*/
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-
-/* used to set default text properties accross application */
 body {
     font-family: sans-serif !important;
 }
-/* used to set outer limits of all the content */
 .container {
     max-width: 1200px;
     width: 90%;
@@ -114,8 +108,6 @@ ul {
 
 /* -------------------------- COMPONENTS -------------------------- */
 
-/* used for reusable code such as classes */
-
 .pop-text {
     font-weight: 700;
     color: #9775fa;
@@ -123,8 +115,6 @@ ul {
 .small-text {
     font-size: 12px;
 }
-
-/* note: I did not use any outline buttons in this project, so I did not add any border to the psuedo-classes below. */
 .btn {
     font-weight: 400;
     font-size: 16px;
@@ -153,8 +143,6 @@ ul {
 }
 
 /* -------------------------- SECTIONS -------------------------- */
-
-/* used for different sections of the page*/
 
 /* ---- NAVIGATION SECTION ---- */
 
@@ -323,19 +311,6 @@ ul {
 }
 .contact-heading {
     margin-bottom: 20px;
-}
-.contact-form-container {
-    background-color: #9775fa;
-    width: 600px;
-    padding: 50px 100px;
-    border-radius: 20px;
-    margin-bottom: 20px;
-}
-.contact-form-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    width: 70%;
 }
 
 /* -------------------------- SINGLE USE -------------------------- */
