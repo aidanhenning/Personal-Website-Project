@@ -22,11 +22,6 @@ Ariel - Sans Serif
 FROM OPEN-COLOR ON GOOGLE
 
 PRIMARY
-Base: #339af0 (blue)
-Tint: #d0ebff
-Shade: #1971c2
-
-SECONDARY
 Base: #9775fa (lavender)
 Tint: #e5dbff
 Shade: #7048e8
@@ -51,266 +46,279 @@ Black: #000000 (black)
 /* -------------------------- GLOBAL STYLES -------------------------- */
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 body {
-    font-family: sans-serif !important;
+  font-family: sans-serif !important;
+  background-image: url();
+  background-color: #000b23;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%233E292A' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23000E90'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
+  backdrop-filter: blur(2px);
 }
 .container {
-    max-width: 1200px;
-    width: 90%;
-    margin: 0 auto;
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
 }
 h1 {
-    font-weight: 700;
-    line-height: 1.2;
-    letter-spacing: -2px;
-    font-size: 62px;
-    color: #212529;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -2px;
+  font-size: 62px;
+  color: #ffffff;
 }
 h2 {
-    font-weight: 700;
-    line-height: 1.2;
-    letter-spacing: -2px;
-    font-size: 40px;
-    color: #212529;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -2px;
+  font-size: 40px;
+  color: #ffffff;
 }
 h3 {
-    font-weight: 700;
-    line-height: 1.2;
-    letter-spacing: -2px;
-    font-size: 40px;
-    color: #212529;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -2px;
+  font-size: 40px;
+  color: #ffffff;
 }
 p {
-    font-weight: 400;
-    line-height: 1.5;
-    letter-spacing: 0px;
-    font-size: 16px;
-    color: #495057;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  font-size: 16px;
+  color: #ffffff;
 }
 a {
-    font-weight: 400;
-    text-decoration: none;
-    line-height: 1.5;
-    font-size: 16px;
-    color: #495057;
-    display: inline-block;
+  font-weight: 400;
+  text-decoration: none;
+  line-height: 1.5;
+  font-size: 16px;
+  color: #ffffff;
+  display: inline-block;
 }
 span {
-    display: inline-block;
+  display: inline-block;
 }
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 /* -------------------------- COMPONENTS -------------------------- */
 
 .pop-text {
-    font-weight: 700;
-    color: #9775fa;
+  font-weight: 700;
+  color: #9775fa;
 }
 .small-text {
-    font-size: 12px;
+  font-size: 12px;
 }
 .btn {
-    font-weight: 400;
-    font-size: 16px;
-    text-decoration: none;
-    padding: 15px 30px;
-    border-radius: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 8px;
 }
-.btn-primary:link, .btn-primary:visited {
-    color: #ffffff;
-    background-color:#339af0;
+.btn-primary:link,
+.btn-primary:visited {
+  color: #ffffff;
+  background-color: #9775fa;
 }
-.btn-primary:hover, .btn-primary:active {
-    color: #ffffff;
-    background-color:#1971c2;
-}
-.btn-secondary:link, .btn-secondary:visited {
-    color: #ffffff;
-    background-color: #9775fa;
-}
-.btn-secondary:hover, .btn-secondary:active {
-    color: #ffffff;
-    background-color: #7048e8;
-}
-.social-media-logo {
-    width: 60px;
+.btn-primary:hover,
+.btn-primary:active {
+  color: #ffffff;
+  background-color: #7048e8;
 }
 
 /* -------------------------- SECTIONS -------------------------- */
 
-/* ---- NAVIGATION SECTION ---- */
+/* ----- HOME ----- */
+
+/* NAV */
 
 .nav-bar {
-    margin-bottom: 100px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
-.nav-item:link, .nav-item:visited {
-    background-color: none;
+.nav-item:link,
+.nav-item:visited {
+  background-color: none;
 }
 .nav-item:hover {
-    background-color: #f1f3f5;
+  background-color: #7048e8;
 }
 .nav-item:active {
-    background-color: #495057;
+  background-color: #7048e8;
 }
-/* ---- BIO SECTION ---- */
+
+/* BIO */
 
 .bio-section {
-    text-align: center;
-    margin-bottom: 40px;
+  text-align: center;
+  margin-bottom: 40px;
 }
 .bio-heading {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 .bio-paragraph {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
-/* ---- LEARN MORE SECTION ---- */
+.social-media-logo {
+  width: 60px;
+}
+
+/* LEARN MORE */
 
 .learn-more-section {
-    text-align: center;
-    margin-bottom: 50px;
+  text-align: center;
+  margin-bottom: 50px;
 }
 .learn-more-card {
-    background-color: #339af0;
-    width: 800px;
-    padding: 50px 100px;
-    border-radius: 20px;
-    margin: 0 auto;
+  width: 800px;
+  padding: 50px 100px;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 20px;
+  border-color: #9775fa;
+  margin: 0 auto;
 }
 .learn-more-heading {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
-/* ---- SKILLS SECTION ---- */
+
+/* SKILLS */
 
 .skills-section {
-    text-align: center;
-    margin-bottom: 50px;
+  text-align: center;
+  margin-bottom: 50px;
 }
 .skills-card {
-    background-color: #f1f3f5;
-    width: 800px;
-    padding: 25px 50px;
-    border-radius: 20px;
-    margin: 0 auto;
+  background-color: rgba(70, 70, 70, 0.3);
+  width: 800px;
+  padding: 15px 30px;
+  border-radius: 20px;
+  margin: 0 auto;
 }
 .program-logos {
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 .skills-heading {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 .skills-logo {
-    width: 50px;
-}
-/* ---- FOOTER SECTION ---- */
-
-.footer {
-    text-align: center;
+  width: 50px;
 }
 
-/* ---- ABOUT TITLE SECTION ---- */
+/* ----- ABOUT ----- */
+
+/* INTRO */
 
 .about-title-section {
-    text-align: center;
-    margin-bottom: 40px;
+  text-align: center;
+  margin-bottom: 40px;
 }
 .about-heading {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 .about-subheading {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
-/* ---- EDUCATION SECTION ---- */
+/* EXPERIENCE */
+
+.experience-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* EDUCATION */
 
 .education-section {
-    text-align: center;
-    margin-bottom: 40px;
+  text-align: center;
+  margin-bottom: 40px;
 }
 .education-heading {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 .education-cards {
-    width: 800px;
-    height: 300px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-evenly;
+  width: 800px;
+  height: 300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
 }
 .bootcamp-card {
-    background-color: #339af0;
-    width: 300px;
-    padding: 20px;
-    border-radius: 20px;
+  background-color: #7048e8;
+  width: 300px;
+  padding: 20px;
+  border-radius: 20px;
 }
 .college-card {
-    background-color: #339af0;
-    width: 300px;
-    padding: 20px;
-    border-radius: 20px;
+  background-color: #7048e8;
+  width: 300px;
+  padding: 20px;
+  border-radius: 20px;
 }
-.education-card-heading{
-    color: #ffffff;
-    margin-bottom: 5px;
+.education-card-heading {
+  color: #ffffff;
+  margin-bottom: 5px;
 }
 .education-card-paragraph {
-    color: #ffffff;
+  color: #ffffff;
 }
 
-/* ---- EXPERIENCE SECTION ---- */
-.experience-section {
-    text-align: center;
-    margin-bottom: 40px;
-}
+/* ----- PORTFOLIO ----- */
 
-/* ---- PORTFOLIO TITLE SECTION ---- */
+/* INTRO */
 
 .portfolio-title-section {
-    text-align: center;
-    margin-bottom: 40px;
+  text-align: center;
+  margin-bottom: 40px;
 }
 .portfolio-heading {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 .portfolio-subheading {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
-/* ---- PORTFOLIO DISPLAY SECTION ---- */
+/* PROJECTS */
 
 .portfolio-table {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 .portfolio-table-item {
-    text-align: center;
-    padding: 30px;
+  text-align: center;
+  padding: 30px;
 }
 .portfolio-images {
-    width: 400px;
+  width: 400px;
 }
 
-/* ---- CONTACT SECTION ---- */
+/* ----- CONTACT ----- */
 
 .contact-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .contact-heading {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+/* ----- FOOTER ----- */
+
+.footer {
+  text-align: center;
 }
 
 /* -------------------------- SINGLE USE -------------------------- */
